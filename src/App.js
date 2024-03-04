@@ -1,7 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
+import React, { useState } from 'react'
 import ColorBlock from './ColorBlock.js'
-import React, {useState} from 'react'
+import ColorForm from './ColorForm.js'
 
 function App() {
   let [colors, setColors] = useState([
