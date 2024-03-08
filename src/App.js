@@ -19,8 +19,9 @@ function App() {
     {colors.map((color, i) => 
         <ColorBlock key={i} color={color} />
     )}
+    <ColorForm />
 </div>
-  );
+  )
 }
 
 export default App;
