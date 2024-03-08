@@ -14,12 +14,17 @@ function App() {
       <ColorBlock color={color} />
     )
   })
+
+  const addColor = (newColor) => {
+    setColors([colors, newColor])
+  }
+
   return (
     <div className="App">
     {colors.map((color, i) => 
         <ColorBlock key={i} color={color} />
     )}
-    <ColorForm />
+    <ColorForm addColor={addColor} />
 </div>
   )
 }
